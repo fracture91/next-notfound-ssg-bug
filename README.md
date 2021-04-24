@@ -1,3 +1,15 @@
+# Bug Reproduction
+
+```bash
+npm run dev
+xdg-open http://localhost:3000/blog/post # can see "hello world" - good
+npm run build
+npm run start
+xdg-open http://localhost:3000/blog/post # 404 page - good
+npm run export # error copying post.html to ./out directory
+```
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
